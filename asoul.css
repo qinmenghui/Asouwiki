@@ -1,0 +1,65 @@
+@charset "utf-8";
+@font-face
+{
+    font-family: Zpix;
+    src: url(sansation_light.woff);
+}
+ 
+div
+{
+    font-family:Zpix;
+}
+a.nav-link
+{
+    outline: none;
+    border: none;
+    
+    color: black;
+    
+}
+a.nav-link:hover{
+
+    color:black;
+    border: none;
+    background-color: #ddd;
+}
+
+/* 创建三个相等的列 */
+.column {
+    float: left;
+    padding: 10px;  
+}
+.column.side{
+    width: 20%;
+}
+.column.middle{
+    width: 80%;
+}
+  /* 列后清除浮动 */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   
+  /* 响应式布局 - 小于 1200 px 时改为上下布局 */
+  @media screen and (max-width: 1200px) {
+    .column {
+      width: 100%;
+    }
+    .column.side{
+      width: 100%;
+  }
+  .column.middle{
+      width: 100%;
+  }
+
+  }
+  .picutre1{
+    width: 50%;
+    height: auto;
+  }
+  .background1{
+    background-image: url(https://asoulfan.com/images/part1_bg_4.webp);
+  }
