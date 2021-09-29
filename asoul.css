@@ -9,12 +9,28 @@ div
 {
     font-family:Zpix;
 }
+
+p{
+  font-family:Zpix;
+  color: white;
+  font-size: larger;
+}
+p.rl{
+  font-family:Zpix;
+  color: white;
+  font-size: larger;
+  writing-mode: sideways-rl;
+}
+
 a.nav-link
 {
+    float: left;
     outline: none;
     border: none;
-    
-    color: black;
+    text-align: center;
+    padding-right: 10px;
+    color: #B8A6D9;
+    text-decoration: none;
     
 }
 a.nav-link:hover{
@@ -24,17 +40,33 @@ a.nav-link:hover{
     background-color: #ddd;
 }
 
-/* 创建三个相等的列 */
-.column {
-    float: left;
-    padding: 10px;  
+/* 创建两个不相等的列 */
+.column{
+  float: left;
 }
-.column.side{
-    width: 20%;
+
+.column .left{
+  float: left;
+    width: 30%;
 }
-.column.middle{
-    width: 80%;
+.column .right{
+  float: left;
+    width: 70%;
+    background-color: black;
+
 }
+.column .left1{
+  float: left;
+    width: 10%;
+}
+.column .right1{
+  float: left;
+    width: 90%;
+    background-color: black;
+
+}
+
+
   /* 列后清除浮动 */
   .row:after {
     content: "";
@@ -43,23 +75,39 @@ a.nav-link:hover{
   }
 
    
-  /* 响应式布局 - 小于 1200 px 时改为上下布局 */
-  @media screen and (max-width: 1200px) {
-    .column {
+  /* 响应式布局 - 小于 800px 时改为上下布局 */
+  @media screen and (max-width: 800px) {
+   .column.left, .column.right{
       width: 100%;
-    }
-    .column.side{
-      width: 100%;
+      padding: 0;
   }
-  .column.middle{
-      width: 100%;
+}
+
+
+  .part1 {
+    background: #333;
+    
+}
+
+  .patr1-img {
+    width: 80%;
+    padding-left: 10px,20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
+
+  #part1_p1{
+    width: 60%;
+    top: 2rem;    
+    position: relative;
   }
-  .picutre1{
-    width: 50%;
-    height: auto;
-  }
-  .background1{
-    background-image: url(https://asoulfan.com/images/part1_bg_4.webp);
+  .part1_p4{
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
   }
