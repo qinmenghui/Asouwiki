@@ -6,7 +6,7 @@
     font-family: kaiti;
     src:url(font/youran.ttf);
 }
- 
+
 div
 {
     font-family:kaiti;
@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  
+
 }
 .footer {
   background-color: #444;
@@ -95,31 +95,15 @@ body {
   overflow: hidden;
   background-color: #777;
 }
-.topmenu li {
-  float: left;
-}
-.topmenu li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-.topmenu li a:hover {
-  background-color: #222;
-}
-.topmenu li a.active {
-  color: white;
-  background-color: #4CAF50;
-}
 .column {
   float: left;
+  display: block;
   padding: 15px;
 }
 .clearfix::after {
   content: "";
   clear: both;
-  display: table;
+  display: block;
 }
 .cloumn-left{
   width: 80%;
@@ -129,6 +113,15 @@ body {
   width: 20%;
   float: left;
 }
+.twoweima{
+  width: 170px;
+  height: 100px;
+  position: relative;
+  float: left;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 150px;
+  }
 .sidemenu {
   width: 25%;
 }
@@ -158,7 +151,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.sidemenu li a {
+.sidemenu ul li a {
   margin-bottom: 4px;
   display: block;
   padding: 8px;
@@ -166,13 +159,16 @@ body {
   text-decoration: none;
   color: #999;
 }
-.sidemenu li a:hover {
+.sidemenu ul li a:hover {
   background-color: #555;
-  color: white;
+  color: aqua;
 }
-.sidemenu li a.active {
+.sidemenu li a:active {
   background-color: #008CBA;
   color: white;
+}
+.sidemenu ul li a::after {
+  content: "←";
 }
 .coin{
   margin-left: 5px;
@@ -222,17 +218,20 @@ transform-origin: center bottom;
 
 
 
-
+.loader {
+  overflow: hidden;
+  font-size: 45px;
+}
 .loader-wrapper{
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color:#9AC8E2;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 @-moz-keyframes loading {
@@ -298,10 +297,7 @@ transform-origin: center bottom;
     opacity: .6;
   }
 }
-.loader {
-  overflow: hidden;
-  font-size: 45px;
-}
+
 .loader span {
   -moz-animation: loading 1s linear infinite -0.8s;
   -webkit-animation: loading 1s linear infinite -0.8s;

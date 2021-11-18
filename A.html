@@ -7,6 +7,11 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>向晚AvA</title>
+        <style>
+            .loader-wrapper{
+            background-color: #9AC8E2;
+            }
+        </style>
     </head>
     <body>
        <div id="main">
@@ -21,7 +26,7 @@
               <div class="lists column sidemenu">
                   <p>使用须知</p>
                 <ul class="nes-list is-circle">
-                  <li><a href="">关于我们</a></li>
+                  <a href="">关于我们</a>
                   <li><a href="">功能说明</a></li>
                   <li><a href="">操作指南</a></li>
                 </ul>
@@ -45,6 +50,10 @@
                   <div>
                       <img class ="picture" src="picture/向晚.png">
 
+                  </div>
+                  <div>
+                      <div class="twoweima"> <img src="/picture/gaogenxie.png">
+                      <h3>🤗爱扫不扫🤗</h3></div>
                   </div>
               </div>
 
@@ -75,7 +84,10 @@
 
                 </div>
 
-                <div class="cloumn-right"><img class ="picture" src="/picture/xiangwan.webp"></div>
+                <div class="cloumn-right"><img class ="picture" src="picture/xiangwan.webp">
+
+                </div>
+
                 <div class="cloumn-left">
                     <div>
                         <h3>相关信息</h3>
@@ -154,7 +166,7 @@
                 <!--bilibili-->
                 <div>
                 <a href="https://space.bilibili.com/703007996">
-                <img class="picture1" src="/picture/bilibili-circle.png">
+                <img class="picture1" src="https://user-images.githubusercontent.com/57628270/142228562-699236c5-cb67-4124-9d1b-1d84e5759773.png">
                 </a>
                     <h4>哔哩哔哩</h4>
                     <p>视频/直播</p>
@@ -163,7 +175,7 @@
                 <!--douyin-->
                 <div>
                     <a href="https://www.douyin.com/user/MS4wLjABAAAAflgvVQ5O1K4RfgUu3k0A2erAZSK7RsdiqPAvxcObn93x2vk4SKk1eUb6l_D4MX-n?previous_page=app_code_link">
-                        <img class="picture1" src="/picture/douyin-circle.png">
+                        <img class="picture1" src="https://user-images.githubusercontent.com/57628270/142228597-e963d903-d726-46f3-8123-c59deb454753.png">
                     </a>
                         <h4>抖音</h4>
                         <p>短视频/直播</p>
@@ -171,12 +183,14 @@
                 <!--weibo-->
                     <div>
                         <a href="https://weibo.com/u/7519401668">
-                            <img class="picture1" src="/picture/weibo-circle.png">
+                            <img class="picture1" src="https://user-images.githubusercontent.com/57628270/142228634-e6884e36-ed44-47c1-80da-1a3bd940fbda.png">
                         </a>
                             <h4>微博</h4>
                             <p>迷你博客</p>
                     </div>
             </section>
+          </div>
+       </div>
 
    <!-- loader -->
    <div class="loader-wrapper">
@@ -230,7 +244,7 @@
     </html>
 <script>
     $(window).ready(function(){
-        $('.loader-wrapper').fadeOut(3000);
+        $('.loader-wrapper').fadeOut(1000);
         $('main').fadeIn();
     });
 </script>
